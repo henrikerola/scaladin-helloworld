@@ -1,7 +1,6 @@
 package com.example
 
 import javax.servlet.annotation.WebServlet
-
 import vaadin.scala._
 import vaadin.scala.server.ScaladinServlet
 
@@ -22,9 +21,7 @@ class HelloWorldUI extends UI(theme = ValoTheme.ThemeName) {
     })
 
     addComponent(Button("Click Me", { e =>
-
       layout.addComponent(Label("Thanks for clicking!"))
-
     }))
   }
 }
